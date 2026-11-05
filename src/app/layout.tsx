@@ -14,10 +14,28 @@ const jost = Jost({
   weight: ["300", "400", "500"],
 });
 
+const title = "Generative Gains | Enterprise AI for Qatar and the GCC";
+const description =
+  "Generative Gains designs, deploys and runs enterprise AI: models, agents and integrations that plug into your existing systems, hosted where your data has to stay.";
+
+// Preview images come from opengraph-image.png and twitter-image.png in this folder.
 export const metadata: Metadata = {
-  title: "Generative Gains | Enterprise AI for Qatar and the GCC",
-  description:
-    "Generative Gains designs, deploys and runs enterprise AI: models, agents and integrations that plug into your existing systems, hosted where your data has to stay.",
+  metadataBase: new URL("https://generativegains.com"),
+  title,
+  description,
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: "Generative Gains",
+    title,
+    description,
+    locale: "en",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
