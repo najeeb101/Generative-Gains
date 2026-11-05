@@ -15,7 +15,7 @@ import {
   services,
 } from "@/content/site";
 
-const wrap = "mx-auto w-full max-w-6xl px-4 sm:px-8";
+const wrap = "mx-auto w-full max-w-[88rem] px-4 sm:px-8 lg:px-12";
 const h2 = "font-display text-4xl leading-[1.08] text-frost sm:text-5xl";
 
 function Header() {
@@ -48,7 +48,7 @@ function Hero() {
     <section id="top" className={`${wrap} grid items-center gap-10 pb-20 pt-14 sm:pt-20 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:pb-28`}>
       <div>
         <h1 className="font-display text-[clamp(2.75rem,6vw,5.25rem)] leading-[1.02] text-frost">{hero.title}</h1>
-        <p className="mt-7 max-w-lg text-lg leading-relaxed text-mist">{hero.body}</p>
+        <p className="mt-7 max-w-xl text-lg leading-relaxed text-mist">{hero.body}</p>
         <div className="mt-9 flex flex-wrap gap-3">
           <a href="#products" className="rounded-full bg-frost px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-sand">
             See our products

@@ -42,3 +42,6 @@ next-env.d.ts
 
 # source material, kept private
 /Generative Gains Profile data.docx
+
+.vercel
+.env*
